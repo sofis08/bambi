@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bambi</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --pastel-pink: #fcd5ce;
+      --pastel-blue: #cce3f2;
+      --pastel-yellow: #fefae0;
+      --pastel-lilac: #e6ccff;
+      --pastel-green: #d6f5d6;
+      --text-color: #5b5b5b;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #fff1f1, #fefae0);
+      padding-top: 30px;
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--text-color);
+    }
+
+    h1, h2 {
+      font-weight: bold;
+      color: #7a5c61;
+    }
+
+    p {
+    font-size:15px;
+    
+    }
+
+    .section {
+      display: none;
+      padding: 40px 20px;
+      border-radius: 20px;
+      background-color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    .active-section {
+      display: block;
+    }
+
+    .btn-primary {
+      background-color: var(--pastel-blue);
+      border: none;
+      color: #4a4a4a;
+    }
+
+    .btn-success {
+      background-color: var(--pastel-green);
+      border: none;
+      color: #3d3d3d;
+    }
+
+    .btn-warning {
+      background-color: var(--pastel-yellow);
+      border: none;
+      color: #5c5c00;
+    }
+
+    .btn-danger {
+      background-color: var(--pastel-lilac);
+      border: none;
+      color: #4b3262;
+    }
+
+    .btn-secondary {
+      background-color: var(--pastel-pink);
+      border: none;
+      color: #733;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+
+    .btn {
+      margin: 8px;
+      transition: all 0.2s ease;
+    }
+
+    img {
+      max-width: 300px;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+      margin-right: 30px;
+    }
+
+    ul {
+      list-style: circle;
+      padding-left: 20px;
+      font-size: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #fcd5ce;
+      border-top: 2px dashed #e6a4b4;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #6e4444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container text-center">
+    <h1 class="mb-4">BAMBI</h1>
+
+    <!-- Botones -->
+    <div class="mb-4">
+      <button class="btn btn-primary" onclick="mostrarSeccion('inicio')">Inicio</button>
+      <button class="btn btn-success" onclick="mostrarSeccion('bambi')"> Bambi</button>
+      <button class="btn btn-warning" onclick="mostrarSeccion('personajes')">Personajes</button>
+      <button class="btn btn-danger" onclick="mostrarSeccion('curiosidades')">Curiosidades</button>
+      <button class="btn btn-secondary" onclick="mostrarSeccion('autor')">Autor y Biografía</button>
+    </div>
+
+    <!-- INICIO -->
+    <div id="inicio" class="section active-section">
+      <img src="bambi3.jpg" class="img-fluid" alt="principal">
+      <p class="mt-3">
+        El personaje del cual hablaremos sera de <strong>Bambi</strong>, el cervatillo de Disney.  
+    
+      </p>
+    </div>
+
+    <!-- QUIÉN ES -->
+    <div id="bambi" class="section">
+      <h2> Bambi</h2>
+      <img src="bambi 1.jpg" class="rounded float-start" alt="...">
+<img src="bambi4.jpg" class="rounded float-end" alt="...">
+      <p>
+        Bambi es un tierno ciervo de cola blanca que protagoniza la película animada “Bambi” (1942) de Disney, basada en el libro “Bambi, una vida en el bosque” del escritor Felix Salten, publicado en 1923. La historia sigue su crecimiento desde que es un cervatillo curioso e inocente hasta que se convierte en un ciervo adulto fuerte y sabio, heredando el título de Príncipe del Bosque.
+
+Bambi vive rodeado de naturaleza y aprende poco a poco sobre el mundo que lo rodea. A lo largo de su vida, hace grandes amigos como Tambor, un conejo travieso; Flor, una mofeta muy dulce; y Faline, una cierva que se convierte en su compañera. Junto a ellos, Bambi vive momentos alegres, como jugar en la pradera o descubrir la nieve por primera vez.
+
+Pero también enfrenta situaciones tristes y difíciles, como la pérdida de su madre a manos de los cazadores humanos. Esa parte de la historia es muy famosa por ser una de las más tristes del cine animado. Con la ayuda de su padre, el Gran Príncipe del Bosque, Bambi aprende a ser fuerte, a proteger a los suyos y a sobrevivir en un mundo a veces peligroso.
+
+Finalmente, Bambi crece y forma su propia familia, continuando el ciclo de la vida en el bosque. Su historia es un mensaje sobre el crecimiento, la naturaleza, la pérdida, la amistad y la esperanza.</p>
+      
+    </div>
+
+    <!-- PERSONAJES -->
+    <div id="personajes" class="section">
+      <h2>Personajes</h2>
+      <div class="card-group">
+  <div class="card">
+    <img src="amigo bambi.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Tambor</h5>
+      <p class="card-text">Tambor es un conejito travieso y juguetón, uno de los primeros amigos de Bambi. Es muy gracioso, alegre y leal, y siempre está dispuesto a ayudar. Tiene una personalidad chispeante y una risa contagiosa que lo hacen inolvidable. Es quien le enseña a Bambi muchas cosas importantes en su niñez, como hablar, caminar y explorar el bosque. A pesar de su tamaño, Tambor demuestra una gran valentía y un corazón enorme.</p>
+      <p class="card-text"><small class=></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="amiga.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Flor</h5>
+      <p class="card-text">Flor es una mofeta tímida y dulce, muy educada y sensible. Aunque al principio se asusta con facilidad y se sonroja cuando Bambi le pone su nombre por error, se convierte en un gran amigo. Tiene una personalidad delicada pero muy valiente, y muestra que la fuerza no siempre viene de lo físico, sino del corazón. Es amable, respetuoso y siempre apoya a sus amigos.</p>
+      <p class="card-text"><small class=></small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="papa2.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Papa Bambi</h5>
+      <p class="card-text">Es el padre de Bambi, un majestuoso ciervo que cuida y vigila el bosque con sabiduría. Es fuerte, serio y respetado por todos los animales. Al principio parece distante, pero en realidad es muy protector y amoroso a su manera. Cuando Bambi pierde a su madre, es él quien lo recoge y lo guía en su camino hacia la adultez. Representa el ejemplo de liderazgo y fortaleza que Bambi debe seguir.</p>
+      <p class="card-text"><small class=></small></p>
+    </div>
+  </div>
+</div>
+        
+    </div>
+
+    <!-- CURIOSIDADES -->
+    <div id="curiosidades" class="section">
+      <h2>Curiosidades sobre Bambi</h2>
+      <ul class="text-start">
+        <li>La película se basa en el libro "Bambi: Una vida en el bosque" (1923) escrito por Felix Salten, un autor austriaco.</li>
+        <li>La escena de la muerte de la madre de Bambi es considerada una de las más tristes en la historia del cine infantil.</li>
+        <li>Fue una de las primeras películas de Disney que usó animación realista basada en estudios de animales vivos y bosque natural.</li>
+        <li>El desarrollo de la película tomó casi una década debido al nivel de detalle y realismo que Disney quería lograr en cada escena.</li>
+        <li>Bambi fue elegido por el Instituto Americano del Cine como uno de los héroes cinematográficos más importantes de todos los tiempos.</li>
+        <li>En 2011, fue seleccionado para ser preservado en el Registro Nacional de Cine de los Estados Unidos por su importancia cultural, histórica y estética.</li>
+      </ul>
+    </div>
+
+    <!-- AUTOR -->
+    <div id="autor" class="section">
+      <h2>Autor </h2>
+      <img src="autorbambi.jpg" class="img-fluid" alt="...">
+      <p>
+        El autor de la historia original de Bambi fue Felix Salten, cuyo verdadero nombre era Siegmund Salzmann. Nació el 6 de septiembre de 1869 en Budapest, Hungría, y emigró a Viena con su familia cuando era niño.
+      </p>
+      <p>
+        Salten fue un escritor, periodista y crítico literario judío austriaco. A lo largo de su carrera escribió novelas, cuentos, obras de teatro y ensayos. Sin embargo, su obra más conocida a nivel mundial es "Bambi: Eine Lebensgeschichte aus dem Walde" (Bambi: una historia de vida en el bosque), publicada en 1923.
+      </p>
+      <p>
+        Esta novela no era originalmente para niños, sino una profunda reflexión sobre la vida, el miedo, la supervivencia y la naturaleza, vista desde los ojos de un ciervo. Más tarde, Disney adaptó esta obra al público infantil con una versión más tierna y accesible.
+      </p>
+      <p>
+        Por ser judío, Felix Salten se vio obligado a huir de Austria durante la Segunda Guerra Mundial. Se exilió en Suiza, donde vivió hasta su muerte el 8 de octubre de 1945. Aunque muchas de sus otras obras han sido olvidadas, **Bambi** lo inmortalizó como un referente de la literatura ecológica y emocional.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    Bambie creado en 1923 ✨
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.section');
+      secciones.forEach(seccion => {
+        seccion.classList.remove('active-section');
+      });
+      document.getElementById(id).classList.add('active-section');
+    }
+  </script>
+
+</body>
+</html>
